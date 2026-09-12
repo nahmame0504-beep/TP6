@@ -1,0 +1,23 @@
+package com.example.tp;
+
+/**
+ * Classe représentant un média audio avec une durée déterminée.
+ */
+public class Audio extends Media {
+    private int duree; // en secondes
+
+    public Audio(String titre, int duree) {
+        super(titre);
+        this.duree = duree;
+    }
+
+    @Override
+    public void lire() {
+        System.out.println("Lecture audio : " + titre);
+    }
+
+    @Override
+    public int getDuree() {
+        return duree;
+    }
+}
